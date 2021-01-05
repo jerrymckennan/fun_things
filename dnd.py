@@ -35,6 +35,7 @@ def players():
         count = count + 1
 
 # This will get the rolls for each player and add them to the roll_totals arrays
+# It is called upon after every roll in the random_events() function
 def rolling(): 
     count = 0
     while count <= (int(num_players)-1):
@@ -78,6 +79,7 @@ def random_event():
         ending_game()
     
 # This is to determine whether to loop the random_event() again or end the script
+# Like the rolling() function, this is called upon after every roll. 
 def ending_game():
     end_game = input("Is this the end of the game? Type Y for yes, N for no: ")
     if end_game == "Y":
