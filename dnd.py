@@ -14,7 +14,6 @@
 # with rounding up to ensure there would not be a 0 for the monsters and the max gold pieces would be awarded.
 
 import numpy as np
-import random 
 import math
 
 # Variables for:
